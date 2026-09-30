@@ -7,19 +7,11 @@ define e = Character("Eileen")
 
 
 # The game starts here.
+define e = Character("Eileen", color="#c8ffc8")
 
 label start:
 
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
-
-    scene bg room
-
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
-
+    scene bg room with dissolve
     show eileen happy
 
     # These display lines of dialogue.
